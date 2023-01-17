@@ -6,48 +6,50 @@ export default function Home() {
 	return (
 		<div>
 			<main className={styles.hero}>
-				<div className={`${styles.container} ${styles.hero__content}`}>
-					<div className={styles.hero__grupo}>
-						<div className={styles.hero__grupoImg}>
-							<Link href="#" className={styles.hero__grupoBtn}>
-								Me interesa
-							</Link>
+				<div className={styles.container}>
+					<div className={styles.hero__content}>
+						<div className={styles.hero__grupo}>
+							<div className={styles.hero__grupoImg}>
+								<Link href="#" className={styles.hero__grupoBtn}>
+									Me interesa
+								</Link>
+							</div>
+							<div className={styles.hero__grupoDescription}>
+								<p className={styles.hero__grupoTexto}>
+									Bienvenido a Fineducom, donde nos dedicamos a proporcionar
+									créditos y educación financiera de alta calidad.
+								</p>
+							</div>
 						</div>
-						<div className={styles.hero__gtupoDescription}>
-							<p className={styles.hero__grupoTexto}>
-								Bienvenido a Fineducom, donde nos dedicamos a proporcionar
-								créditos y educación financiera de alta calidad.
-							</p>
+						<div className={styles.hero__grupo}>
+							<div
+								className={`${styles.hero__grupoDescription} ${styles.hero__grupoDescriptionModificado}`}
+							>
+								<p className={styles.hero__grupoTexto}>
+									Ofrecemos consejos y recursos sobre una amplia variedad de
+									temas, cómo ahorrar dinero, cómo manejar deudas y cómo obtener
+									y mantener un buen historial crediticio.
+								</p>
+							</div>
+							<div className={styles.hero__grupoImg}>
+								<Link href="#" className={styles.hero__grupoBtn}>
+									Conoce más
+								</Link>
+							</div>
 						</div>
-					</div>
-					<div className={styles.hero__grupo}>
-						<div
-							className={`${styles.hero__gtupoDescription} ${styles.hero__grupoDescriptionModificado}`}
-						>
-							<p className={styles.hero__grupoTexto}>
-								Ofrecemos consejos y recursos sobre una amplia variedad de
-								temas, cómo ahorrar dinero, cómo manejar deudas y cómo obtener y
-								mantener un buen historial crediticio.
-							</p>
-						</div>
-						<div className={styles.hero__grupoImg}>
-							<Link href="#" className={styles.hero__grupoBtn}>
-								Conoce más
-							</Link>
-						</div>
-					</div>
-					<div className={styles.hero__grupo}>
-						<div className={styles.hero__grupoImg}>
-							<Link href="#" className={styles.hero__grupoBtn}>
-								Quiero Unirme
-							</Link>
-						</div>
-						<div className={styles.hero__grupoDescription}>
-							<p className={styles.hero__grupoTexto}>
-								Nuestra comunidad en línea es un lugar para compartir
-								experiencias y aprender de otros que también están tratando de
-								alcanzar sus metas financieras.
-							</p>
+						<div className={styles.hero__grupo}>
+							<div className={styles.hero__grupoImg}>
+								<Link href="#" className={styles.hero__grupoBtn}>
+									Quiero Unirme
+								</Link>
+							</div>
+							<div className={styles.hero__grupoDescription}>
+								<p className={styles.hero__grupoTexto}>
+									Nuestra comunidad en línea es un lugar para compartir
+									experiencias y aprender de otros que también están tratando de
+									alcanzar sus metas financieras.
+								</p>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -70,7 +72,7 @@ export default function Home() {
 
 			<section className={styles.section}>
 				<div className={`${styles.container} ${styles.section__content}`}>
-					<div className={styles.section__infoSimulador}>
+					<div className={styles.section__infoGrop}>
 						<p className={styles.section__infoTexto}>
 							Prueba nuestro simulador de crédito para ver cuál es la opción de
 							financiamiento más adecuada para ti
@@ -79,7 +81,9 @@ export default function Home() {
 							Solicita tu crédito
 						</Link>
 					</div>
-					<Form />
+					<div className={styles.section__infoGroup}>
+						<Form />
+					</div>
 				</div>
 			</section>
 		</div>
