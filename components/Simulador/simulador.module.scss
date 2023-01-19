@@ -1,0 +1,51 @@
+.form {
+	&__grupo {
+		margin-bottom: 0.93rem;
+	}
+	&__grupoTitle {
+		font-size: 1.75rem;
+		margin-bottom: 0.93rem;
+	}
+	&__label {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		gap: 1.25rem;
+		line-height: 1.15;
+		font-size: 1.25rem;
+		margin-bottom: 0.62rem;
+		input[type='text'] {
+			border: none;
+			border-bottom: solid 0.06rem lightgray;
+			height: 2.81rem;
+			padding: 0 0.62rem;
+			outline: none;
+			width: 100%;
+			transition: all 0.3s ease-in;
+			&:hover,
+			&:focus {
+				transition: all 0.3s ease-in;
+				border-bottom: solid 0.31rem #4f2d81;
+				outline: invert;
+			}
+		}
+	}
+	input[type='range'] {
+		width: 100%;
+	}
+	&__grupoBtn {
+		display: flex;
+		justify-content: center;
+	}
+	&__btn {
+		background-color: #4f2d81;
+		color: #fff;
+		border: none;
+		padding: 0.93rem 1.25rem;
+		border-radius: 0.62rem;
+	}
+	&__grupoText {
+		font-size: 1.25rem;
+		margin-top: 0.93rem;
+	}
+}
