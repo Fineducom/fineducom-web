@@ -1,0 +1,35 @@
+.footer {
+	background-color: #4f2d81;
+	color: white;
+	padding: 1.87rem 0;
+	margin-top: 0.62rem;
+	.container {
+		width: 80%;
+		margin: 0 auto;
+	}
+	&__content {
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		gap: 1.87rem;
+	}
+	&__group {
+		width: 21.87rem;
+		height: max-content;
+		font-size: 1.12rem;
+		letter-spacing: 0.06rem;
+	}
+	&__groupRedesSociales {
+		margin: 0.62rem 0;
+	}
+	&__groupTitle {
+		font-weight: 700;
+		font-size: 1.18rem;
+		margin-bottom: 0.93rem;
+	}
+	&__groupItem {
+		margin-bottom: 0.62rem;
+	}
+	&__groupLink {
+		font-weight: lighter;
+	}
+}
