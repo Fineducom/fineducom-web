@@ -1,0 +1,51 @@
+$morado: #4f2d81;
+$blacnco: white;
+
+.container {
+	width: 80%;
+	margin: auto;
+}
+
+.hero {
+	&__title {
+		justify-content: center;
+		text-align: center;
+		font-size: 2.5rem;
+		margin-bottom: 1.875rem;
+	}
+	&__content {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 1.875rem;
+	}
+	&__description {
+		font-size: 1.56rem;
+		letter-spacing: 0.0625rem;
+		background-color: $morado;
+		color: $blacnco;
+		padding: 0.93rem 1.87rem;
+		border-radius: 0 3.12rem 3.12rem 0;
+	}
+	&__enfoque {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+	&__subtitle {
+		font-size: 2.18rem;
+		margin-bottom: 0.93rem;
+	}
+	&__item {
+		font-size: 1.25rem;
+		list-style: inside;
+	}
+}
+
+.section {
+	margin-top: 1.87rem;
+	&__title {
+		text-align: center;
+		font-size: 2.18rem;
+	}
+}
