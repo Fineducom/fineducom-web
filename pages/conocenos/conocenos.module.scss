@@ -1,0 +1,25 @@
+.section {
+	.container {
+		width: 80%;
+		margin: auto;
+	}
+	.title {
+		font-size: 2.5rem;
+		text-align: center;
+		margin: 0.93rem 0;
+	}
+	.description {
+		font-size: 1.75rem;
+		text-align: center;
+		justify-content: center;
+		letter-spacing: 0.0625rem;
+		margin: 0.93rem 0;
+	}
+	.img {
+		width: 50vw;
+		height: 50vh;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+}
