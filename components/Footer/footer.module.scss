@@ -12,6 +12,7 @@
 		grid-template-columns: repeat(4, 1fr);
 		gap: 1.87rem;
 	}
+
 	&__group {
 		width: 21.87rem;
 		height: max-content;
@@ -20,6 +21,9 @@
 	}
 	&__groupRedesSociales {
 		margin: 0.62rem 0;
+		display: flex;
+		gap: 1.25rem;
+		font-size: 1.5rem;
 	}
 	&__groupTitle {
 		font-weight: 700;

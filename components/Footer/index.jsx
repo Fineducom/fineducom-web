@@ -1,15 +1,26 @@
 import Link from 'next/link'
 import styles from './footer.module.scss'
-
+import Image from 'next/image'
 export default function Footer() {
 	return (
 		<>
 			<footer className={styles.footer}>
 				<div className={`${styles.container} ${styles.footer__content}`}>
 					<div className={styles.footer__group}>
-						<div>Fineducom logo</div>
+						<Image alt="logo" width={120} height={66} src="/fineducom-2.png" />
 						<div className={styles.footer__groupRedesSociales}>
-							Redes sociales
+							<Link className={styles.footer__link} href="#">
+								<ion-icon name="logo-facebook"></ion-icon>
+							</Link>
+							<Link className={styles.footer__link} href="#">
+								<ion-icon name="logo-instagram"></ion-icon>
+							</Link>
+							<Link className={styles.footer__link} href="#">
+								<ion-icon name="logo-linkedin"></ion-icon>
+							</Link>
+							<Link className={styles.footer__link} href="#">
+								<ion-icon name="logo-youtube"></ion-icon>
+							</Link>
 						</div>
 						<p className={styles.footer__groupTexto}>
 							FINEDUCOM es una sociedad por acciones simplificada incorporada
