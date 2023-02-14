@@ -1,0 +1,52 @@
+$morado: #4f2d81;
+$blanco: #fff;
+
+.container {
+	width: 80%;
+	margin: auto;
+}
+
+.hero {
+	margin-bottom: 1.87rem;
+	&__title {
+		font-size: 2.5rem;
+		text-align: center;
+		justify-content: center;
+		margin: 1.87rem 0;
+	}
+	&__content {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		gap: 3.12rem;
+	}
+	&__description {
+		background-color: $morado;
+		height: min-content;
+		padding: 0.93rem 1.25rem;
+		color: $blanco;
+		font-size: 1.25rem;
+		letter-spacing: 0.06rem;
+		text-align: center;
+		border-radius: 0 3.12rem 3.12rem 0;
+	}
+	&__diagramaTitle {
+		font-size: 1.87rem;
+	}
+	&__diaram0 {
+		width: 25rem;
+		height: 21.87rem;
+		background-color: $morado;
+	}
+	&__link {
+		font-weight: 700;
+		font-size: 1.25rem;
+	}
+}
+
+.section {
+	&__title {
+		text-align: center;
+		font-size: 1.87rem;
+		margin-bottom: 1.37rem;
+	}
+}

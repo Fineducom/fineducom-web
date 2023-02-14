@@ -1,0 +1,44 @@
+$morado: #4f2d81;
+$blanco: #fff;
+
+.container {
+	width: 80%;
+	margin: auto;
+}
+
+.hero {
+	&__title {
+		text-align: center;
+		font-size: 2.5rem;
+		margin-bottom: 1.87rem;
+	}
+	&__content {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+	}
+	&__description {
+		width: 42.31rem;
+		height: max-content;
+		background-color: $morado;
+		color: $blanco;
+		font-size: 1.25rem;
+		text-align: center;
+		letter-spacing: 0.06rem;
+		align-items: flex-start;
+		padding: 0.93rem 1.75rem;
+		border-radius: 0 3.12rem 3.12rem 0;
+	}
+	&__img {
+		width: 33.31rem;
+		height: 28.12rem;
+	}
+}
+
+.section {
+	&__title {
+		font-size: 1.87rem;
+		text-align: center;
+		margin-bottom: 1.87rem;
+	}
+}
