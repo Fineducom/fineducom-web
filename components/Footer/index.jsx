@@ -10,16 +10,16 @@ export default function Footer() {
 						<Image alt="logo" width={120} height={66} src="/fineducom-2.png" />
 						<div className={styles.footer__groupRedesSociales}>
 							<Link className={styles.footer__link} href="#">
-								<ion-icon name="logo-facebook"></ion-icon>
+								<i className="bx bxl-facebook-circle"></i>
 							</Link>
 							<Link className={styles.footer__link} href="#">
-								<ion-icon name="logo-instagram"></ion-icon>
+								<i className="bx bxl-instagram"></i>
 							</Link>
 							<Link className={styles.footer__link} href="#">
-								<ion-icon name="logo-linkedin"></ion-icon>
+								<i className="bx bxl-linkedin-square"></i>
 							</Link>
 							<Link className={styles.footer__link} href="#">
-								<ion-icon name="logo-youtube"></ion-icon>
+								<i className="bx bxl-youtube"></i>
 							</Link>
 						</div>
 						<p className={styles.footer__groupTexto}>

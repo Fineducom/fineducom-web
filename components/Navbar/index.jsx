@@ -1,159 +1,161 @@
-import Link from 'next/link'
 import Image from 'next/image'
-import Styles from './navbar.module.scss'
-
+import Link from 'next/link'
+import style from './navbar.module.scss'
 export default function Navbar() {
 	return (
-		<div>
-			<nav className={Styles.nav}>
-				<div className={Styles.container}>
-					<div className={Styles.nav__content}>
-						<div className={Styles.nav__logo}>
-							<Image
-								className={Styles.nav__img}
-								alt="Logo menu"
-								src="/peque2-1.png"
-								width={100}
-								height={50}
-							/>
-						</div>
-						<ul className={Styles.list}>
-							<li className={Styles.list__item}>
-								<div
-									className={`${Styles.list__bottom} ${Styles.list__bottomClick}`}
-								>
-									<Link className={Styles.nav__lik} href="/">
-										Inico
-									</Link>
-								</div>
-							</li>
-							<li className={Styles.list__item}>
-								<div
-									className={`${Styles.list__bottom} ${Styles.list__bottomClick}`}
-								>
-									<Link className={Styles.nav__link} href="/credito-personal">
-										Nuestros productos
-									</Link>
-									<div className={Styles.nav__icon}>
-										<ion-icon name="chevron-forward-outline"></ion-icon>
-									</div>
-								</div>
-								<ul className={Styles.list__show}>
-									<li className={Styles.list__inside}>
-										<Link
-											href="/creditos-personal"
-											className={`${Styles.nav__link} ${Styles.nav__linkInside}`}
-										>
-											Crédito personal
-										</Link>
-									</li>
-									<li className={Styles.list__inside}>
-										<Link
-											href="/educacion-financiera"
-											className={`${Styles.nav__link} ${Styles.nav__linkInside}`}
-										>
-											Educación financiera
-										</Link>
-									</li>
-									<li className={Styles.list__inside}>
-										<Link
-											href="/coashing-empresarial"
-											className={`${Styles.nav__link} ${Styles.nav__linkInside}`}
-										>
-											Coaching empresarial
-										</Link>
-									</li>
-									<li className={Styles.list__inside}>
-										<Link
-											href="/credito-comunitario"
-											className={`${Styles.nav__link} ${Styles.nav__linkInside}`}
-										>
-											Crédito comunitario
-										</Link>
-									</li>
-								</ul>
-							</li>
-							<li className={Styles.list__item}>
-								<div
-									className={`${Styles.list__bottom} ${Styles.list__bottomClick}`}
-								>
-									<Link className={Styles.nav__link} href="/credito-personal">
-										Nosotros
-									</Link>
-									<ion-icon name="chevron-forward-outline"></ion-icon>
-								</div>
-								<ul className={Styles.list__show}>
-									<li className={Styles.list__inside}>
-										<Link
-											href="/creditos-personal"
-											className={`${Styles.nav__link} ${Styles.nav__linkInside}`}
-										>
-											Conocenos
-										</Link>
-									</li>
-									<li className={Styles.list__inside}>
-										<Link
-											href="/educacion-financiera"
-											className={`${Styles.nav__link} ${Styles.nav__linkInside}`}
-										>
-											Nuestro equipo
-										</Link>
-									</li>
-									<li className={Styles.list__inside}>
-										<Link
-											href="/coashing-empresarial"
-											className={`${Styles.nav__link} ${Styles.nav__linkInside}`}
-										>
-											Treabaja con nosotros
-										</Link>
-									</li>
-								</ul>
-							</li>
-							<li className={Styles.list__item}>
-								<div
-									className={`${Styles.list__bottom} ${Styles.list__bottomClick}`}
-								>
-									<Link className={Styles.nav__link} href="/credito-personal">
-										Nuestra conunidad
-									</Link>
-									<ion-icon name="chevron-forward-outline"></ion-icon>
-								</div>
-								<ul className={Styles.list__show}>
-									<li className={Styles.list__inside}>
-										<Link
-											href="/creditos-personal"
-											className={`${Styles.nav__link} ${Styles.nav__linkInside}`}
-										>
-											Donde estamos
-										</Link>
-									</li>
-									<li className={Styles.list__inside}>
-										<Link
-											href="/educacion-financiera"
-											className={`${Styles.nav__link} ${Styles.nav__linkInside}`}
-										>
-											Nuestros beneficiarios
-										</Link>
-									</li>
-									<li className={Styles.list__inside}>
-										<Link
-											href="/coashing-empresarial"
-											className={`${Styles.nav__link} ${Styles.nav__linkInside}`}
-										>
-											Nuestros aliados
-										</Link>
-									</li>
-								</ul>
-							</li>
-						</ul>
-						<div className={Styles.nav__btn}>
-							<Link href="#" className={Styles.nav__login}>
-								Ingresar
+		<>
+			<nav className={style.nav}>
+				<div className={style.nav__container}>
+					<Image
+						className={style.nav__imag}
+						alt="Logo fineducom"
+						src="/peque2-1.png"
+						width={100}
+						height={50}
+					/>
+					<ul className={style.menu}>
+						<li className={style.menu__item}>
+							<Link href="/" className={style.nav__link}>
+								Inicio
 							</Link>
-						</div>
+						</li>
+						<li
+							className={`${style.menu__item} ${
+								style[`menu__item--icon-flex`]
+							}`}
+						>
+							<Link href="#" className={style.nav__link}>
+								nuestros productos
+								<div className={style.nav__icon}>
+									<i className="bx bxs-chevron-down"></i>
+								</div>
+							</Link>
+
+							<ul className={style.menu__nesting}>
+								<li className={style.menu__inside}>
+									<Link
+										href="/creditos-personal"
+										className={`${style.nav__link} ${
+											style[`nav__link--inside`]
+										}`}
+									>
+										crédito personal
+									</Link>
+								</li>
+								<li className={style.menu__inside}>
+									<Link
+										href="/educacion-financiera"
+										className={`${style.nav__link} ${
+											style[`nav__link--inside`]
+										}`}
+									>
+										educación financiera
+									</Link>
+								</li>
+								<li className={style.menu__inside}>
+									<Link
+										href="/coaching-empresarial"
+										className={`${style.nav__link} ${
+											style[`nav__link--inside`]
+										}`}
+									>
+										coaching empresarial
+									</Link>
+								</li>
+								<li className={style.menu__inside}>
+									<Link
+										href="/credito-comunitario"
+										className={`${style.nav__link} ${
+											style[`nav__link--inside`]
+										}`}
+									>
+										crédito comunitario
+									</Link>
+								</li>
+							</ul>
+						</li>
+						<li
+							className={`${style.menu__item} ${
+								style[`menu__item--icon-flex`]
+							}`}
+						>
+							<Link href="#" className={style.nav__link}>
+								nosotros
+								<div className={style.nav__icon}>
+									<i className="bx bxs-chevron-down"></i>
+								</div>
+							</Link>
+							<ul className={style.menu__nesting}>
+								<li className={style.menu__inside}>
+									<Link
+										href="/conocenos"
+										className={`${style.nav__link} ${
+											style[`nav__link--inside`]
+										}`}
+									>
+										conocenos
+									</Link>
+								</li>
+								<li className={style.menu__inside}>
+									<Link
+										href="#"
+										className={`${style.nav__link} ${
+											style[`nav__link--inside`]
+										}`}
+									>
+										nuestro equipo
+									</Link>
+								</li>
+								<li className={style.menu__inside}>
+									<Link
+										href="/trabaja-con-nosotros"
+										className={`${style.nav__link} ${
+											style[`nav__link--inside`]
+										}`}
+									>
+										trabaja con nosotros
+									</Link>
+								</li>
+								<li className={style.menu__inside}>
+									<Link
+										href="#"
+										className={`${style.nav__link} ${
+											style[`nav__link--inside`]
+										}`}
+									>
+										nuetra comunidad
+									</Link>
+								</li>
+								<li className={style.menu__inside}>
+									<Link
+										href="#"
+										className={`${style.nav__link} ${
+											style[`nav__link--inside`]
+										}`}
+									>
+										donde estamos
+									</Link>
+								</li>
+								<li className={style.menu__inside}>
+									<Link
+										href="#"
+										className={`${style.nav__link} ${
+											style[`nav__link--inside`]
+										}`}
+									>
+										nuestros aliados
+									</Link>
+								</li>
+							</ul>
+						</li>
+					</ul>
+					<div className={style.nav__btn}>
+						<Link href="#" className={`${style[`nav__link-login`]}`}>
+							ingresar
+						</Link>
 					</div>
 				</div>
 			</nav>
-		</div>
+		</>
 	)
 }
